@@ -134,6 +134,10 @@ img {
     text-decoration: none;
 }
 
+.item-link:hover {
+    color: #F67E7E;
+}
+
 .button {
     display: block;
     font-weight: 600;
@@ -145,6 +149,11 @@ img {
     color: #FFFFFF;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #002529;
 }
 
 /* FIND TALENT */
@@ -386,6 +395,11 @@ img {
     border-color: #012F34;
 }
 
+.start-button:hover {
+    color: #fff;
+    background-color: #012F34;
+}
+
 
 /* FOOTER */
 .footer {
@@ -452,7 +466,12 @@ img {
 }
 
 .footer-sochial__link {
-    display: block;
+    display: flex;
+    color: #fff;
+}
+
+.footer-sochial__link:hover {
+    color: #F67E7E;
 }
 
 .footer-sochial__image {
@@ -462,5 +481,47 @@ img {
 }
 
 .sochial-media__text {
+    font-weight: 600;
     opacity: 0.6
+}
+
+
+/* HERO */
+.hero {
+    background-image: url("/image/about-hero-circle.svg");
+    background-repeat: no-repeat;
+    background-position: right -100px bottom;
+}
+
+.hero-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.hero-title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+.hero-discription {
+    width: 730px;
+}
+
+.hero-discription::before {
+    display: block;
+    width: 50px;
+    height: 4px;
+    content: "";
+    background-color: #F67E7E;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
 }
